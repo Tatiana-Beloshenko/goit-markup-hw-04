@@ -118,7 +118,18 @@ h1, h2, h3, h4, h5, h6 {
 .site-contact .link:focus {
     color: var(--accent-color);
 }
-.envelop::before {
+.envelope {
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+.smartphone {
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+}
+
+/*.envelop::before {
     display: inline-block;
     width: 16px;
     height: 12px;
@@ -139,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
-}
+}*/
 .nav-adres {
     display: flex;
     align-items: center;
@@ -210,11 +221,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 .features .item {
     width: 270px;
+    
 }
 .features .item + .item {
     margin-left: 30px;
 }
-.picture::before {
+.features .item::before {
+    display: flex;
+    
+}
+.icon-border {
+    width: 270px;
+    height: 120px;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #F5F4FA
+}
+/*.icon {
+    width: 70px;
+    height: 70px;*/
+}
+
+/*.picture::before {
     display: block;
     content: "";
     height: 120px;
@@ -234,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 .picture:nth-child(4)::before {
     background-image: url(../img/icon/astronaut.svg);
 }*/
-.antena::before {
+/*.antena::before {
     background-image: url(../img/icon/antenna.svg);
 }
 .clock::before {
@@ -245,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .astronaut::before {
     background-image: url(../img/icon/astronaut.svg);
-}
+}*/
 /*.features {
     display: flex;
     margin: -15px;
@@ -263,7 +293,8 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.features-text{
+
+.features-text {
     margin-top: 0;
     margin-bottom: 0;
     margin-top: 10px;
@@ -313,6 +344,17 @@ background: #F5F4FA;
 }
 .socialnet {
     display: flex;
+    margin-top: 16px;
+}
+.socialnet .item + .item {
+    margin-left: 10px;
+}
+/*.linknet {
+    width: 20px;
+    height: 20px;*/
+
+/*.socialnet {
+    display: flex;
 }
 .socialnet .linknet + .linknet {
     margin-left: 10px;
@@ -336,7 +378,7 @@ background: #F5F4FA;
 }
 .in {
     background-image: url(../img/icon/in.svg);
-}
+}*/
 .team-border {
     padding-top: 30px;
     padding-bottom: 30px;
