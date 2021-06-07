@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 /*.icon {
     width: 70px;
     height: 70px;*/
-}
+
 
 /*.picture::before {
     display: block;
@@ -344,10 +344,33 @@ background: #F5F4FA;
 }
 .socialnet {
     display: flex;
+    justify-content: center;
     margin-top: 16px;
 }
 .socialnet .item + .item {
     margin-left: 10px;
+}
+.socialnet .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--main-bg-color)
+}
+.socialnet .link:hover,
+.socialnet .link:focus {
+    background-color: var(--accent-color);
+}
+.linknet {
+    background-position: center;
+    fill:#AFB1B8;
+    
+}
+.linknet:hover,
+.linknet:focus {
+    fill: var(--main-bg-color);
 }
 /*.linknet {
     width: 20px;
@@ -392,10 +415,19 @@ background: #F5F4FA;
 }
 /* цвет фона футера и цвет логотипа*/
 .footer-adres {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    display: flex;
+   /* padding-top: 60px;
+    padding-bottom: 60px;*/
     background-color: #2F303A;
 }
+.footer-adres .itemadres + .itemadres {
+    margin-left: 70px;
+}
+.logoadres {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .logo-footer {
     display: inline-block;
     color: #FFFFFF;
@@ -420,6 +452,52 @@ background: #F5F4FA;
 .adres-link:focus {
     color: var(--accent-color);
 }
+.socialnetadres {
+    padding-top: 75px;
+    padding-bottom: 97px;
+}
+.join-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: var(--main-bg-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.socialnet-footer {
+    display: flex;
+    justify-content: start;
+}
+.socialnet-footer .item + .item {
+    margin-left: 10px;
+}
+.socialnet-footer .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF1A;
+
+}
+.socialnet-footer .link:hover,
+.socialnet-footer .link:focus {
+    background-color: var(--accent-color);
+}
+.linknet-footer {
+    background-position: center;
+    fill:var(--main-bg-color);
+    
+}
+/*.linknet-footer:hover,
+.linknet-footer:focus {
+    fill: var(--main-bg-color);
+}*/
 
 /* стили ПОРТФОЛИО */
 /* кнопки фильтров*/
@@ -447,6 +525,9 @@ background: #F5F4FA;
 .button-filter:focus {
     color: var(--main-bg-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /*расположение карточек, цвет заголовков проектов*/
@@ -489,56 +570,42 @@ margin-bottom: 30px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
-.klient-logo {
-    display: flex;
-    
-}
-.klient-logo .item + .item {
-    margin-left: 30px;
+.card:hover,
+.card:focus {
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+ 
 }
 .klient {
-    display: block;
-    content: "";
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    background-size: 106px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.yaco {
-    background-image: url(../img/icon/logoyaco.svg);
-}
-.tagline {
-    background-image: url(../img/icon/logotagline.svg);
-}
-.company {
-    background-image: url(../img/icon/logobrand.svg);
-}
-.fosterpeters {
-    background-image: url(../img/icon/logofoster.svg);
-}
-.brand {
-    background-image: url(../img/icon/logobrand.svg);
-}
-.comptagline {
-    background-image: url(../img/icon/logocomptagline.svg);
-}
-.join-title {
-    margin-top: 0;
-    margin-bottom: 20px;
-
-    color: var(--main-bg-color);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-.footer-adres {
     display: flex;
 }
-.footer-adres .item + .item {
-    margin-left: 70px;
+.klient .item + .item {
+    margin-left: 30px;
 }
+
+.klient .link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    
+}
+.klient .link:hover,
+.klien .link:focus {
+    border: 1px solid var(--accent-color);  
+
+}
+.klient-logo {
+    background-position: center;
+    fill: #AFB1B8;
+}
+.klient-logo:hover,
+.klient-logo:focus {
+    fill: var(--accent-color);
+}
+
+
