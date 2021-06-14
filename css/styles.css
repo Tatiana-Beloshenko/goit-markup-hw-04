@@ -112,6 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 .site-contact {
     display: flex;
     margin-left: auto;
+    align-items: center ;
 }
 .site-contact .item + .item {
     margin-left: 50px ;
@@ -312,14 +313,15 @@ background: #F5F4FA;
 .socialnet .link:hover,
 .socialnet .link:focus {
     background-color: var(--accent-color);
+
 }
 .linknet {
     background-position: center;
     fill:#AFB1B8;
     
 }
-.linknet:hover,
-.linknet:focus {
+.socialnet .link:hover .linknet,
+.socialnet .link:focus .linknet  {
     fill: var(--main-bg-color);
 }
 
@@ -350,19 +352,19 @@ background: #F5F4FA;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    
-}
-.klient .link:hover,
-.klien .link:focus {
-    border: 1px solid var(--accent-color);  
 
 }
 .klient-logo {
     background-position: center;
     fill: #AFB1B8;
 }
-.klient-logo:hover,
-.klient-logo:focus {
+.klient .link:hover,
+.klient .link:focus {
+    border: 1px solid var(--accent-color);  
+}
+
+.klient .link:hover .klient-logo,
+.klient .link:focus .klient-logo {
     fill: var(--accent-color);
 }
 
@@ -518,8 +520,8 @@ margin-bottom: 30px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
-.card:hover,
-.card:focus {
+.card-project:hover,
+.card-project:focus {
 box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
